@@ -1,193 +1,232 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+  
+  <div class="topnav" id="myTopnav">
+    <a href="#contact">Contact Me</a>
+    <a href="#spa">Q&A</a>
+    <a href="#qrcoder">QR code</a>
+    <a href="#like">Like</a>
+    <a href="#playlist">My Playlist</a>
+    <a href="#photos">My Photos</a>
+    <a href="#about">About Me</a>
+    
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+  <section id="about" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">About me</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="photos" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">My Photos</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="playlist" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">My Playlist</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="like" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">Give me a like</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+              &version={graph-api-version}
+              &appId={your-facebook-app-id}
+              &autoLogAppEvents=1" 
+          nonce="FOKrbAYI">
+    </script>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+    <!-- Your like button code -->
+    <div class="fb-like" 
+        data-href="https://www.your-domain.com/your-page.html" 
+        data-width=""
+        data-layout="standard" 
+        data-action="like" 
+        data-size="small"  
+        data-share="true">
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="qrcoder" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">Scan me</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="spa" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">Answer</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    <section id="contact" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">Contact me :)</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <center>
+      <form method="post" auction="mailto:shai1@post.bgu.ac.il">
+          <b>Name:</b>
+          <input name="Name" type="text" size="25%">
+          <br><br>
+          <b>Message:</b>
+          <br>
+          <textarea name="Message" rows="12" cols="40">
+          </textarea>
+      </form>
+    </center>
+    <br/>
+    <br/>
+    <br/>
+    </section>
+    
+    
+    <script type="text/javascript">
+    $(function(){
+      $("#nav a").click(function(e){
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash,this.hash); 
+      });
+    });
+    </script>
+    <script type="text/javascript">
+     $(document).scroll(function() {
+        $('#menu').toggle($(this).scrollTop()>1000)
+     });​
+     </script>
+    </body>
+    </html>
+    
+    
+    
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
 </body>
 </html>
