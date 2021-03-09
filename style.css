@@ -16,6 +16,8 @@
 	text-align: center;
 }
 
+
+
 * {
 	box-sizing: border-box;
   }
@@ -116,3 +118,11 @@
 	  overflow-y: auto;
 	}
   }
+
+#home{
+	color: white;
+	text-decoration: none;
+}
+
+.input { font-size: 25px; }
+
