@@ -6,6 +6,25 @@
 	font-size: 16px;
 	cursor: pointer;
   }
+
+
+  #text_wrapper {
+	margin: 40px;
+	border: 1px solid #ccc;
+  }
+  #text {  
+	outline: none;
+	margin: 10px;
+	min-height:200px;
+  }
+  #text img {
+	width: 20px;
+  }
+  
+  #button {
+	color: #bbb;
+	margin-left: 40px;
+  }
   
   /* Darker background on mouse-over */
   .btn:hover {
