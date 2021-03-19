@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+   <!-- <script src="dist/meteorEmoji.min.js"></script>  -->
 
 </head>
 <body>
@@ -51,8 +53,8 @@
     <div class="centered">
       <picture>
         <img src="https://i.ytimg.com/vi/WqCohLl7OqI/hqdefault.jpg" alt="" width="500" height="400" right: 20%>
-        <img src="https://lh3.googleusercontent.com/proxy/FxHTtyPqYAV5jQsnczx4hBYHoRbIFoBXMQcKJuoDJkVgtb-J22m9i9_jVRs0v6PsTIcwOcQOpykKqKD8rB072V1XcnAjeO26Xw" alt="" width="600" height="400" right: 20%>
-        <img src="https://lh3.googleusercontent.com/proxy/Nu-BUYbvkJky-wkU9vVBWgDr613jzeOaUnjly-9-UNLKjMsoyYxsLWt2NAoKmpMI5eSS79MFkWC6RMvas6HgXaP6uEExebk" alt="" width="500" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.2jpg.jpeg?raw=true" alt="" width="600" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.jpg?raw=true" alt="" width="500" height="400" right: 20%>
       </picture>
     </div>
     <br/>
@@ -92,14 +94,17 @@
     <hr style="width:50%">
     <br/>
     <br/>
-      
-    <iframe style="display: block; margin: auto;" src="https://www.youtube.com/embed/8Qu5pOvp1J8" width="560" height="315"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="display: block; margin: auto;" src="https://www.youtube.com/embed/videoseries?list=PL261ZWP5EamKJjV8bhzQhfNohxO_w4OUP&ab_channel=DanyORay" width="650" height="500"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- <iframe style="display: block; margin: auto;" src="https://www.youtube.com/embed/8Qu5pOvp1J8" width="560" height="315"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br/>
     <br/>
     <iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/NbmtiQOnDik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br/>
     <br/>
     <iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/6MIxCpQ7MQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    
+    -->
     <br/>
     <br/>
     </section>
@@ -187,14 +192,9 @@
           <br><br>
           <b>Message:</b>
           <br>
-          <textarea name="Message" rows="15" cols="60" style="font-size: 25pt">
+          <textarea id="Message" rows="15" cols="60" style="font-size: 25pt">
           </textarea>
           <br><br>
-          <div id="text_wrapper">
-          <div id="text" contentEditable="true" hidefocus="true"></div>
-          </div>
-            
-          <span id="button">Add Emoji</span>
           <input type="submit" value="send" class="btn">
       </form>
     </center>
@@ -202,12 +202,24 @@
     <br/>
     </section>
     
+    <!-- emojis -->
     <script type="text/javascript">
     $("#button").click(function() {
     $("#text").append('<img src="https://cdn.okccdn.com/media/img/emojis/apple/1F60C.png"/>');
     });
     </script>
-    
+
+    <script>
+      tinymce.init({
+        selector: "#Message",
+        plugins: "emoticons",
+        toolbar: "emoticons",
+        toolbar_location: "bottom",
+        menubar: false
+      });
+    </script>
+
+     <!-- JavaScript -->
     <script type="text/javascript">
     $(function(){
       $("#nav a").click(function(e){
@@ -222,8 +234,7 @@
      });​
      </script>
     
-    
-    
+  
 
   <script>
   function myFunction() {
@@ -235,6 +246,5 @@
     }
   }
   </script>
-
 </body>
 </html>
