@@ -14,7 +14,7 @@
     <input type="checkbox" id="nav-check">
   <div class="nav-header">
     <div class="nav-title">
-      <a id ="home" href="#top" >Home</a>
+      <a id ="home" href="#top">Home</a>
     </div>
   </div>
   <div class="nav-btn">
@@ -39,35 +39,11 @@
     </div>
   </div>
 
-  <section id="photos" class="section">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <h2 class="centered">My Photos</h2>
-    <hr style="width:50%">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div class="centered">
-      <picture>
-        <img src="https://i.ytimg.com/vi/WqCohLl7OqI/hqdefault.jpg" alt="" width="500" height="400" right: 20%>
-        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.2jpg.jpeg?raw=true" alt="" width="600" height="400" right: 20%>
-        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.jpg?raw=true" alt="" width="500" height="400" right: 20%>
-      </picture>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-  </section>
-
   <section id="about" class="section">
     <br/>
     <br/>
 
-    <br/>
+
     <h2 class="centered">About me</h2>
     <hr style="width:50%">
     <br/>
@@ -86,6 +62,36 @@
     </p>
     <br/>
     </section>
+
+  <section id="photos" class="section">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="centered">My Photos</h2>
+    <hr style="width:50%">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="centered">
+      <picture>
+        <img src="https://i.ytimg.com/vi/WqCohLl7OqI/hqdefault.jpg" alt="" width="500" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.2jpg.jpeg?raw=true" alt="" width="600" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.jpg?raw=true" alt="" width="500" height="400" right: 20%>
+        <img src="https://i.ytimg.com/vi/WqCohLl7OqI/hqdefault.jpg" alt="" width="500" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.2jpg.jpeg?raw=true" alt="" width="600" height="400" right: 20%>
+        <img src="https://github.com/Web-Development-Environments-2021/assignment1-shai1/blob/main/hagashah.jpg?raw=true" alt="" width="500" height="400" right: 20%>
+      
+      </picture>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </section>
+
+  
         
     <section id="playlist" class="section">
     <br/>
@@ -186,16 +192,14 @@
     <br/>
     <br/>
     <center>
-      <form method="post" action="mailto:shai1@post.bgu.ac.il">
-          <b>Name:</b>
-          <input name="Name" type="text" size="25%" style="font-size: 25pt">
+      <form method="post" action="mailto:shai1@post.bgu.ac.il" name="EmailForm">
+          <input class="form-control" name="Name" type="text" size="25%" style="font-size: 12pt" placeholder="Your name" required>
           <br><br>
-          <b>Message:</b>
           <br>
-          <textarea id="Message" rows="15" cols="60" style="font-size: 25pt">
+          <textarea name="message" class="form-content" rows="2" cols="32" style="font-size: 15pt; width: 600px" placeholder="Message">
           </textarea>
           <br><br>
-          <input type="submit" value="send" class="btn">
+          <input type="submit" value="SEND MESSAGE" class="btn">
       </form>
     </center>
     <br/>

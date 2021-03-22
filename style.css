@@ -26,7 +26,7 @@
 	margin-left: 40px;
 }
 
-/* Darker background on mouse-over */
+/* RoyalBlue background on mouse-over */
 .btn:hover {
 	background-color: RoyalBlue;
 }
@@ -44,6 +44,7 @@
 	margin: 0px;
 	font-family: 'segoe ui';
 	background-color: rgb(235, 233, 233);
+	
   }
   
   .nav {
@@ -147,5 +148,43 @@
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.input { font-size: 25px; }
+.input { font-size: 12px; ; }
+
+form{
+	transition: all 4s ease-in-out;
+	width: 600px;
+	height: 400px;
+	
+}
+
+.form-control
+{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	color: #000000;
+	font-size: 18px;
+}
+
+form .submit{
+	background: transparent;
+	border-color: #000000;
+	/*color: #fff;*/
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+form .submit:hover{
+	background-color: royalblue;
+	cursor: pointer;
+}
+
+.form-content{
+	border-color: #000000;
+	background: transparent;	
+}
+
 
