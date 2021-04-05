@@ -5,4 +5,4 @@ Shai Shimon Levi - שי שמעון לוי
 316533561
 
 URL Website:
-https://web-development-environments-2021.github.io/assignment1-shai1/
+https://web-development-environments-2021.github.io/316533561/
