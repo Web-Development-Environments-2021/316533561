@@ -189,11 +189,14 @@
     <center>
       <form method="post" action="javascript::send()" name="EmailForm" enctype="text/plain">
           <input class="form-control" name="Name"  type="text" size="25%" style="font-size: 12pt" placeholder="Your name in english" required>
-          <br/><br/>
+          <br id="myBR"><br/>
           <br/>
           <input id="subject" class="form-control" name="Subject"  type="text" size="25%" style="font-size: 12pt" placeholder="Subject" required>
           <br/><br/>
-          <br/> 
+          <br/>
+          <input id="email" class="form-control" name="senderEmail" type="text" size="25%" style="font-size: 12pt" placeholder="Enter Your Email" required>
+          <br/><br/>
+          <br/>  
           <textarea id="msg" class="form-content" name="message" rows="7" cols="32" style="font-size: 15pt; width: 600px; resize: none; " placeholder="Message content in english" data-emoji-picker="true"></textarea>
           <br><br>
           <input type="submit" value="SEND MESSAGE" class="btn" onclick="send()">
@@ -208,7 +211,9 @@
   <script>
     function send() {
       setTimeout(function() {
-        window.open("mailto:shai1@post.bgu.ac.il" + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('msg').value);
+        let mybr = document.createElement('br');
+        window.open("mailto:shai1@post.bgu.ac.il" + "?subject=" + document.getElementById('subject').value + "&body= Sender Email: " + document.getElementById('email').value + "  Content: "  + document.getElementById('msg').value);
+        mybr.style.display = "true";
       }, 320);
     }
   </script>
